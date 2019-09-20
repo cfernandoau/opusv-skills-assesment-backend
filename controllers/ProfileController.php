@@ -61,7 +61,7 @@ class ProfileController extends ActiveController
         }else{
 
 
-            throw new \yii\base\Exception('Not '.$data[0]);
+            throw new Exception('Not '.$data[0]);
         }
     }
 
@@ -83,7 +83,7 @@ class ProfileController extends ActiveController
             return $data;
         }else{
 
-            throw new Exception('Received content contained invalid JSON!');
+            throw new Exception('Your request was made with invalid credentials.');
         }
     }
 

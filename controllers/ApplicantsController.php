@@ -50,7 +50,7 @@ class ApplicantsController extends ActiveController
 //            'except'=>['auth','options']
 //        ];
 
-        $behaviors['authenticator'] = ['class' => CustomAuth::className(), 'except' => ['auth', 'options'], 'authMethods' => [HttpBearerAuth::className()]];
+        $behaviors['authenticator'] = ['class' => CustomAuth::className(), 'except' => ['auth', 'options']];
 
 
         return $behaviors;
